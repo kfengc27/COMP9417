@@ -1,15 +1,15 @@
 import numpy as np
 
-import linear_regression as lr
+import linearRegression as lr
 
+# Load data from path
 def data_from_file(path, p):
   """
-  Load in feature matrix X and mpg vector y from file at `path`.
-  Add polynomial features to `p`th degree
 
-  :param path: path to data file
-  :param p: degree of polynomial features to generate up to
-  :return: [X, y, raw_data]
+  path: path to data file
+  p: degree of polynomial features to generate up to
+
+  return -> [X, y, raw_data]
   """
   Data = np.loadtxt(path)
 
